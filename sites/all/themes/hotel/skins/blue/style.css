@@ -976,6 +976,10 @@ body.maintenance-page div#page {
 	margin:auto;
 }
 
+body.maintenance-page div#header {
+	min-height: 90px;
+}
+
 @media (min-width: 1200px) {
 /* MENU */
   #superfish-1 {

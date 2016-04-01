@@ -1000,6 +1000,10 @@ body.maintenance-page div#content-content {
 	color:#ffffff;
 	font-size: 1.8em;
 }
+body.maintenance-page div#content-content a {
+	color:#ffffff;
+	text-decoration:underline;
+}
 
 @media (min-width: 1200px) {
 /* MENU */

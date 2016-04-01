@@ -980,7 +980,7 @@ body.maintenance-page div#header {
 }
 body.maintenance-page h1#site-name {
 	    font-family: 'Fira Sans', sans-serif;
-		font-size: 2.5em;
+		font-size: 3.3em;
 }
 body.maintenance-page h1#site-name a{
 	color:#ffffff;
@@ -992,6 +992,9 @@ body.maintenance-page h1#site-name a{
 }
 body.maintenance-page h1#page-title {
 	    color:#ffffff;
+}
+body.maintenance-page #footer {
+	display:none;	
 }
 
 @media (min-width: 1200px) {

@@ -996,7 +996,7 @@ body.maintenance-page h1#page-title {
 body.maintenance-page #footer {
 	display:none;	
 }
-body.maintenance #content-content {
+body.maintenance-page div#content-content {
 	color:#ffffff;
 	font-size: 1.8em;
 }

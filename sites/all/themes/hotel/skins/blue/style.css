@@ -996,6 +996,10 @@ body.maintenance-page h1#page-title {
 body.maintenance-page #footer {
 	display:none;	
 }
+body.maintenance #content-content {
+	color:#ffffff;
+	font-size: 1.8em;
+}
 
 @media (min-width: 1200px) {
 /* MENU */

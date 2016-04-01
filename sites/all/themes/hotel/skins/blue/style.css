@@ -976,11 +976,19 @@ body.maintenance-page div#page {
 	margin:auto;
 }
 body.maintenance-page div#header {
-	min-height: 90px;
+	min-height: 120px;
 }
 body.maintenance-page h1#site-name {
 	    font-family: 'Fira Sans', sans-serif;
 		font-size: 2.5em;
+}
+body.maintenance-page h1#site-name a{
+	color:#ffffff;
+	color: #FFF;
+	z-index: 10;
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
 }
 body.maintenance-page h1#page-title {
 	    color:#ffffff;

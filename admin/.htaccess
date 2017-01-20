@@ -1,0 +1,9 @@
+#RESTRICT TO SPECIFIED USERS
+SSLRequireSSL
+ErrorDocument 403 /usmexicowar/admin/403-ssl-redirect.php
+AuthName "UT Arlington NetID"
+AuthType kerberos
+KrbAuthRealms UTA.EDU
+KrbVerifyKDC off
+KrbMethodNegotiate off
+require user leverenz@UTA.EDU kschenk@UTA.EDU rholmes@UTA.EDU jbailey@UTA.EDU cdwalter@UTA.EDU

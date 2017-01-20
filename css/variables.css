@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'minion';
+  src: url('fonts/MinionPro-Medium.eot');
+  src: url('fonts/MinionPro-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/MinionPro-Medium.woff') format('woff'), url('fonts/MinionPro-Medium.ttf') format('truetype'), url('fonts/MinionPro-Medium.svg') format('svg');
+}
+@font-face {
+  font-family: 'chopin';
+  src: url('fonts/ChopinScript.eot');
+  src: url('fonts/ChopinScript.eot?#iefix') format('embedded-opentype'), url('fonts/ChopinScript.woff') format('woff'), url('fonts/ChopinScript.ttf') format('truetype'), url('fonts/ChopinScript.svg') format('svg');
+}
+/*@font-size-base: 100%;*/
+#intro,
+#home {
+  background: #0064b1;
+  /*background: url(images/intro.png) 50% 0 fixed;*/
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 10% 0;
+}
+#home {
+  padding: 0;
+}
+#intro {
+  background-size: 1808px;
+}
+#architecture,
+#business {
+  height: 120%;
+  margin: 0 auto;
+  position: relative;
+  padding: 17% 0;
+}
+#architecture_departments,
+#business_departments {
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+#architecture_departments h1,
+#business_departments h1,
+#architecture_departments h3,
+#business_departments h3 {
+  padding-left: 20px;
+}
+#architecture {
+  background: url(../images/architecture.jpg);
+  background-attachment: fixed;
+  background-size: 85% auto;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-color: #e7f6fd;
+}
+#architecture_departments {
+  background: #e7f6fd;
+}
+#business {
+  background: url(../images/business.jpg);
+  background-attachment: fixed;
+  background-size: 85% auto;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-color: #d99b64;
+}
+#leftnav {
+  position: fixed;
+  text-align: left;
+  z-index: 500;
+  left: 20px;
+  width: 20%;
+}
+#leftnav a:visited,
+#leftnav a:link {
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, 0.43);
+  padding-bottom: 20px;
+  display: inline-block;
+}
+#leftnav a.active:visited,
+#leftnav a.active:link {
+  color: #FFFFFF;
+}
+#leftnav a#share {
+  opacity: .4;
+  float: left;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+#leftnav a#share:hover {
+  opacity: 1;
+}
+#leftnav a#info {
+  background: #FFFFFF;
+  opacity: .4;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  font-size: 2.5em;
+  text-align: center;
+  float: left;
+  color: #00477C;
+  font-weight: bold;
+}
+#leftnav a#info:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+#leftnav #homenav {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#leftnav #homenav li.current a {
+  color: #FFFFFF;
+}
+#leftnav:nth-of-type(1) {
+  top: 20px;
+  margin-top: 10px;
+}
+#leftnav:nth-of-type(2) {
+  bottom: 10px;
+}
+#rightnav {
+  right: 20px;
+  top: 40px;
+  z-index: 500;
+  width: 5%;
+  position: fixed;
+  height: 100%;
+}
+#rightnav #nav,
+#rightnav #subnav {
+  list-style: none;
+}
+#rightnav #nav li,
+#rightnav #subnav li {
+  margin-bottom: 12px;
+  width: 20px;
+}
+#rightnav #nav li.arch_nav,
+#rightnav #subnav li.arch_nav {
+  background: #d4effc;
+}
+#rightnav #nav li.business_nav,
+#rightnav #subnav li.business_nav {
+  background: rgba(255, 255, 255, 0.65);
+}
+#rightnav #nav li.active,
+#rightnav #subnav li.active,
+#rightnav #nav li.current.arch_nav,
+#rightnav #subnav li.current.arch_nav {
+  background: #0064b1;
+}
+#rightnav #nav li.arch_nav:hover,
+#rightnav #subnav li.arch_nav:hover {
+  background: #00477C;
+}
+#rightnav #nav li.current.business_nav,
+#rightnav #subnav li.current.business_nav,
+#rightnav #nav li.active.business_nav,
+#rightnav #subnav li.active.business_nav {
+  background: #FFFFFF;
+}
+#rightnav #nav li.business_nav:hover,
+#rightnav #subnav li.business_nav:hover {
+  background: #FFFFFF;
+}
+#rightnav #nav a,
+#rightnav #subnav a {
+  display: block;
+  height: 20px;
+  width: 20px;
+  color: rgba(255, 255, 255, 0.43);
+}
+#rightnav #nav #accountingTitle,
+#rightnav #subnav #accountingTitle,
+#rightnav #nav #economicsTitle,
+#rightnav #subnav #economicsTitle,
+#rightnav #nav #marketingTitle,
+#rightnav #subnav #marketingTitle,
+#rightnav #nav #managementTitle,
+#rightnav #subnav #managementTitle,
+#rightnav #nav #infoTitle,
+#rightnav #subnav #infoTitle,
+#rightnav #nav #financeTitle,
+#rightnav #subnav #financeTitle,
+#rightnav #nav #topTitle,
+#rightnav #subnav #topTitle,
+#rightnav #nav #deanTitle,
+#rightnav #subnav #deanTitle {
+  display: none;
+  position: fixed;
+  right: 70px;
+  color: #0064b1;
+  text-align: right;
+}
+.hometitle,
+.architecture,
+.business {
+  font-size: 7em;
+}
+.chopin {
+  font-family: 'chopin';
+  color: #FFFFFF;
+  margin-top: 7%;
+  text-shadow: 4px 2px #00477C;
+  font-size: 9em;
+}
+.year,
+.collegehome {
+  background: #FFFFFF;
+  color: #0064b1;
+}
+.year {
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+.collegehome {
+  margin-top: 16%;
+  margin-bottom: 20%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 22%;
+  margin-left: -22%;
+  text-align: center;
+  margin-right: 20%;
+  font-size: 7em;
+}
+.maincollege {
+  width: 100%;
+  margin-left: -24%;
+  text-align: center;
+  padding-left: 20%;
+  background: rgba(255, 255, 255, 0.45);
+  margin-bottom: 0;
+  display: inline-block;
+  float: left;
+  margin-top: 0;
+  font-size: 6em;
+}
+#liblogo {
+  width: 64%;
+  padding-bottom: 30px;
+}
+.college {
+  width: 100%;
+}
+#colleges {
+  background: #d4effc;
+}
+body {
+  background: #0064b1;
+  letter-spacing: .05em;
+}
+.row.individual {
+  color: #000000;
+  padding-bottom: 10px;
+}
+.row.individual .imgdiv {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  overflow: hidden;
+  float: left;
+}
+.row.individual .imgdiv img {
+  width: 100%;
+}
+.row.individual span {
+  display: inline;
+  /*font-size:1.2em;*/
+  font-size: 120%;
+}
+.row.individual .col-md-6 {
+  padding-top: 25px;
+}
+h1.architecture {
+  background: rgba(255, 255, 255, 0.73);
+  color: #0064b1;
+}
+h1.business {
+  background: rgba(217, 155, 100, 0.73);
+  color: #FFFFFF;
+}
+.modal-body h4 {
+  font-size: 1.3em;
+}
+.modal-body h5 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.modal-body p {
+  padding-left: 10px;
+}
+.depthead {
+  padding-left: 20px;
+}
+.depthead h2 {
+  padding-left: 20px;
+}
+#arrow {
+  z-index: 500;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+}
+#arrow a {
+  color: #FFFFFF;
+  opacity: .6;
+}
+#arrow a .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgba(255, 255, 255, 0.8);
+}
+#arrow a:hover {
+  color: #00477C;
+  text-decoration: none;
+}
+#arrow a:hover .arrow-down {
+  border-top: 20px solid #ffffff;
+}
+#sharediv {
+  display: none;
+  background: rgba(255, 255, 255, 0.43);
+  position: fixed;
+  width: 200px;
+  left: 115px;
+  height: 41px;
+  border-top-right-radius: 5px;
+  margin-top: 3px;
+  padding-top: 11px;
+  padding-left: 9px;
+  border-bottom-right-radius: 5px;
+}
+#sharediv .twitter-share-button,
+#sharediv .IN-widget,
+#sharediv .fb-share-button {
+  float: left;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.internalnav {
+  background: #00477C;
+  height: 808px;
+}
+.odd {
+  margin-left: 13.3%;
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 24%;
+}
+.odd:nth-of-type(1) {
+  margin-left: 0;
+}
+.even {
+  margin-left: 17%;
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 24%;
+}
+.nursing {
+  float: right;
+  margin-left: 0;
+  width: 24%;
+}
+.bottom {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 24.6%;
+  padding-top: 5%;
+  margin-top: 0;
+}
+.bottom:nth-of-type(1),
+.bottom:nth-of-type(3) {
+  padding-top: 0;
+}
+.main-business {
+  background: #d99b64;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+section {
+  max-width: 1514px;
+}
+.col-md-10 {
+  padding-right: 0;
+  padding-left: 0;
+}

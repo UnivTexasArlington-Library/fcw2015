@@ -294,6 +294,10 @@ span.marker {
   border-right: 1px solid #e5e5e5;
 }
 
+div#panel-second-wrapper div.grid-25 {
+	padding-bottom:20px;
+}
+
 .block-title {
   color: #222;
 }

@@ -1,5 +1,5 @@
 <?php
 
-drupal_goto('https://library.uta.edu/fcw/2016', 301);
+drupal_goto('/2016', 307);
 
 ?>

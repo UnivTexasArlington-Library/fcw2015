@@ -167,8 +167,9 @@
       <aside  role="complementary">
         <div class="side_inner col-lg-3 col-lg-pull-9 col-md-3 col-md-pull-8 col-sm-12 col-xs-12 " >
         <?php print render($page['sidebar_first']); ?>
+        <?php print render($page['sidebar_third']); ?>
         <div id="row3">
-         <?php print render($page['sidebar_third']); ?>
+         
        </div>
       </div>
       </aside>  <!-- /#sidebar-first -->

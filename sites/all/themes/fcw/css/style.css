@@ -6628,9 +6628,12 @@ h2.block-title {
   font-size: 1.288em; }
 
 .region.region-sidebar-first {
+  min-height: 305px;
+  border-right: 1px solid #e5e5e5;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  margin-right: -31px; }
   .region.region-sidebar-first a {
     text-decoration: none;
     font-size: 1.666em;
@@ -6648,8 +6651,7 @@ h2.block-title {
     border-radius: 50%;
     color: #fff; }
   .region.region-sidebar-first div.view-content {
-    padding: 20px;
-    padding-top: 10px; }
+    padding: 20px; }
   .region.region-sidebar-first .block-title {
     padding-left: 15px; }
 
@@ -6660,47 +6662,45 @@ h2.block-title {
     padding-left: 0px; }
 
 /*Faculty Achievements*/
-.region.region-content {
-  border-right: 1px solid #e5e5e5;
-  border-left: 1px solid #e5e5e5; }
-  .region.region-content #node-6 {
-    min-height: 305px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 19px; }
-    .region.region-content #node-6 h2 {
-      font-size: 1.2em;
-      background-image: url(divider4.png);
-      background-repeat: no-repeat;
-      background-position: bottom center;
-      margin-bottom: 10px;
-      padding-bottom: 20px;
-      margin-top: 0px;
-      text-align: center; }
-      .region.region-content #node-6 h2 a {
-        color: #222; }
-    .region.region-content #node-6 a {
-      text-decoration: none; }
-      .region.region-content #node-6 a:active, .region.region-content #node-6 a:focus, .region.region-content #node-6 a:hover {
-        color: #065288; }
-    .region.region-content #node-6 .list-inline {
-      font-size: 1.8em;
-      text-align: right;
-      margin: 0 0.455em 0 0;
-      padding: 0 0.6em 0 0; }
-      .region.region-content #node-6 .list-inline a {
-        color: #065288 !important; }
-        .region.region-content #node-6 .list-inline a:hover, .region.region-content #node-6 .list-inline a:focus {
-          text-decoration: underline; }
-      .region.region-content #node-6 .list-inline li {
-        font-size: 0.5888em; }
+.region.region-content #node-6 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 19px; }
+  .region.region-content #node-6 h2 {
+    font-size: 1.2em;
+    background-image: url(divider4.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    text-align: center; }
+    .region.region-content #node-6 h2 a {
+      color: #222; }
+  .region.region-content #node-6 a {
+    text-decoration: none; }
+    .region.region-content #node-6 a:active, .region.region-content #node-6 a:focus, .region.region-content #node-6 a:hover {
+      color: #065288; }
+  .region.region-content #node-6 .list-inline {
+    font-size: 1.8em;
+    text-align: right;
+    margin: 0 0.455em 0 0;
+    padding: 0 0.6em 0 0; }
+    .region.region-content #node-6 .list-inline a {
+      color: #065288 !important; }
+      .region.region-content #node-6 .list-inline a:hover, .region.region-content #node-6 .list-inline a:focus {
+        text-decoration: underline; }
+    .region.region-content #node-6 .list-inline li {
+      font-size: 0.5888em; }
 
 /*Faculty creative works*/
 .region.region-sidebar-second {
-  min-height: auto;
-  padding: 15px !important; }
+  min-height: 305px;
+  border-left: 1px solid #e5e5e5;
+  padding: 15px !important;
+  margin-left: -36px; }
   .region.region-sidebar-second .block-title {
-    margin-bottom: .5em;
+    margin-bottom: 20px;
     margin-top: 0;
     font-size: 1.288em; }
 
@@ -6757,8 +6757,6 @@ h2.block-title {
 .side_inner {
   padding-left: 0px !important;
   padding-right: 0px !important; }
-  .side_inner .region.region-sidebar-first {
-    border-bottom: 1px solid #ccc; }
   .side_inner .block-views-browse-lastname-block-1 {
     padding: 20px;
     padding-left: 30px; }
@@ -6766,8 +6764,19 @@ h2.block-title {
       font-size: 1.1em; }
     .side_inner .block-views-browse-lastname-block-1 h2 {
       margin-top: 0px; }
-  .side_inner .region.region-sidebar-first .block-title {
-    padding-left: 15px; }
+  .side_inner .region.region-sidebar-first {
+    border-bottom: 1px solid #ccc;
+    margin-right: 0px;
+    border-right: none;
+    padding-top: 0px;
+    padding: 20px; }
+    .side_inner .region.region-sidebar-first .block-title {
+      padding-left: 0px; }
+    .side_inner .region.region-sidebar-first .view-content {
+      padding: 0px;
+      margin-top: 20px; }
+  .side_inner .region.region-sidebar-third {
+    padding: 20px; }
 
 .hangingIndent > p {
   text-indent: -28px;
@@ -6867,6 +6876,13 @@ h2.block-title {
   #node-6 h2 {
     font-weight: bold; }
 
+  .region.region-sidebar-first {
+    min-height: 0px; }
+
+  .region.region-sidebar-second {
+    border-left: none;
+    margin-left: 0px; }
+
   .region.region-content {
     border-left: none;
     border-right: none; }
@@ -6880,10 +6896,7 @@ h2.block-title {
   .content_inner {
     min-height: 0px; }
     .content_inner .page-header {
-      padding-top: 0px; }
-
-  .side_inner .region.region-sidebar-first {
-    padding: 0px; } }
+      padding-top: 0px; } }
 @media (max-width: 767px) {
   header {
     width: 100%;

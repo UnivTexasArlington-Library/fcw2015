@@ -630,8 +630,8 @@ header{
      background: $brand-info;
      line-height: 3.0;
      z-index: 497;
-     margin-top: -20px;
-     height: 148px;
+     margin-top: -43px;
+     height: 142px;
 
         li {
           display: block !important;
@@ -654,7 +654,6 @@ header{
           a{
             height: 37px;
             color: #222 ;
-            padding: 5px;
             top: -6px;
             &:active-trail{
               color: $link-color;
@@ -738,6 +737,11 @@ header{
   } 
 }
 
+@media (max-width: 720px) {
+#menu-bar-wrapper .sf-menu {
+    margin-top: -11px;
+   }
+}
 
 
 
@@ -758,5 +762,8 @@ header{
     }
 .flex-direction-nav a {
   top: 30%;
-  }    
+  } 
+#menu-bar-wrapper .sf-menu {
+    margin-top: -20px;
+   }     
 }

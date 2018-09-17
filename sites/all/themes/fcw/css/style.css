@@ -6932,8 +6932,8 @@ h2.block-title {
       background: #ccc;
       line-height: 3.0;
       z-index: 497;
-      margin-top: -20px;
-      height: 148px; }
+      margin-top: -43px;
+      height: 142px; }
       #menu-bar-wrapper .sf-menu li {
         display: block !important;
         float: none;
@@ -6953,7 +6953,6 @@ h2.block-title {
         #menu-bar-wrapper .sf-menu li a {
           height: 37px;
           color: #222;
-          padding: 5px;
           top: -6px; }
           #menu-bar-wrapper .sf-menu li a:active-trail {
             color: #065288; }
@@ -6999,6 +6998,9 @@ h2.block-title {
     overflow: hidden;
     height: auto;
     max-height: 125px; } }
+@media (max-width: 720px) {
+  #menu-bar-wrapper .sf-menu {
+    margin-top: -11px; } }
 @media (max-width: 480px) {
   #logo {
     float: left;
@@ -7014,7 +7016,10 @@ h2.block-title {
     top: 45px; }
 
   .flex-direction-nav a {
-    top: 30%; } }
+    top: 30%; }
+
+  #menu-bar-wrapper .sf-menu {
+    margin-top: -20px; } }
 @media (min-width: 1200px) {
   /* MENU */
   #superfish-1 {

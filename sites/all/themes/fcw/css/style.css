@@ -6584,7 +6584,8 @@ h1 {
     #block-superfish-1 #superfish-1 a:hover {
       background-color: #fff; }
     #block-superfish-1 #superfish-1 li a {
-      margin-left: -15px; }
+      margin-left: auto;
+      margin-right: auto; }
 
 a.sf-depth-1.active {
   color: #065288 !important; }

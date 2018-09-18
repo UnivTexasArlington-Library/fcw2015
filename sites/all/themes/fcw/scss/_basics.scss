@@ -4,7 +4,6 @@ h1{
 	padding-bottom: 20px;
 	display: inline-block;
 }
-
 .page-header {
     font-size: 1.7em;
     padding-bottom: 10px;
@@ -13,11 +12,9 @@ h1{
     border-bottom: none;
     margin-bottom: 0px; 
 }
-
 .faculty-row, .creative-row {
   padding-bottom: 2em;
 }
-
 .faculty-row h2 {
    margin-top:0;
 }
@@ -35,9 +32,9 @@ h1{
   }
 }
 .external-link::after {
-    content: url(external-link.png);
-    display: inline-block;
-    padding-left: 5px;
+  content: url(external-link.png);
+  display: inline-block;
+  padding-left: 5px;
 }
 .name {
 	background-color: none;
@@ -45,146 +42,130 @@ h1{
 	color: #fff;
 	font-size: 2.333em;
 	z-index: 10;
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
 	&:hover, &:focus {
 		color:#fff;
 		text-decoration: none;
 	}
 }
 #navbar {
-	  background-color: #005E99;
-    background-image: url(https://library.uta.edu/fcw/2015/sites/all/themes/hotel/skins/blue/images/Celelabrating2.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    border: none;
-    margin-bottom: 0px;
-    height: auto;
-    padding: 10px;
-    margin-top: 0px;
-	.container{	
+  background-color: #005E99;
+  background-image: url(https://library.uta.edu/fcw/2015/sites/all/themes/hotel/skins/blue/images/Celelabrating2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  margin-bottom: 0px;
+  height: auto;
+  padding: 10px;
+  margin-top: 0px;
+	.container {	
 		width: 100%;
 		max-width: 1200px;
-		}
 	}
-
+}
 #logo {
 	margin-left: 10px;
-    float: left;
-    margin-right: 10px;
+  float: left;
+  margin-right: 10px;
 	img {
-		width:160px; /* you can use % */
-    	height: auto;
-    	float : left;
-    	padding-bottom: 10px;
+  	width:160px; /* you can use % */
+   	height: auto;
+   	float : left;
+   	padding-bottom: 10px;
   }
 }
 .container{
 	max-width: 1200px;
 	width: 100%;
 }
-
-
-
 /* Superfish MENU */
-
 #menu-bar-wrapper {
-    margin-left: -15px;
-    margin-right: -15px;
-    
-   
-	.sf-menu{
-		 background: $brand-info;
-		 line-height: 3.0;
-         z-index: 497;
-         li {
-    			display:inline-block !important;
-    			float:none;
-    			margin-right:18px;
-    			margin-left:18px;
-    			width: 21%;
-    			border-top: none;
-    			border-right: 1px solid #3b3c3e;
-    			border-left: 1px solid #3b3c3e;
-					}
+  margin-left: -15px;
+  margin-right: -15px;
+	.sf-menu {
+    background: $brand-info;
+		line-height: 3.0;
+    z-index: 497;
+    li {
+      display:inline-block !important;
+    	float:none;
+    	margin-right:18px;
+    	margin-left:18px;
+    	width: 21%;
+    	border-top: none;
+    	border-right: 1px solid #3b3c3e;
+    	border-left: 1px solid #3b3c3e;
+			}
 		.sf-style-hotel {
-			ul {	
-	 			background: #ccc;
-        		float:none;
-				}
-			a {
-    			color: #222 !important;
-    			text-align: center;
-    			padding:20px;
-    			font-size: 1.2em;
-    			&:active{
-    				color: $link-color !important;
-    				}
-    			.sf-depth-1 {
-   					color: #222;
-   					
-   				} 
-   				.active-trail .sf-depth-1 {
-   					color: $link-color;
-   				} 
-   			}
-   		}
-	
-	}
-	
+		ul {	
+	 	 background: #ccc;
+     float:none;
+		}
+		a {
+    	color: #222 !important;
+    	text-align: center;
+    	padding:20px;
+      font-size: 1.2em;
+    	&:active{
+    	color: $link-color !important;
+      }
+    .sf-depth-1 {
+   		color: #222;
+   	  } 
+   	.active-trail .sf-depth-1 {
+   		color: $link-color;
+   		} 
+   	}
+   }
+  }
 }
-
 #block-superfish-1 {
 	font-size: 1.5em;
 	background-color: $brand-info;
-    #superfish-1 {
-    	float:none;
-    	text-align: center;
+  #superfish-1 {
+   	float:none;
+   	text-align: center;
+   	color: #222;
+   	a {
+      &:focus , &:visited , &:link {
+      text-decoration: none !important;
     	color: #222;
-    	a{
-    	
-    	&:focus , &:visited , &:link {
-    	 text-decoration: none !important;
-    	 color: #222;
-
-    	 }	
-    	 &:active-trail {
-    	 		color: $link-color !important;
-    	 	} 
-    	 &:hover{
-    	 	background-color: #fff;
-    	 }
-    	 
-    	}
-      li a{
-          margin-left: auto;
-          margin-right: auto;
-      }
+  	 }
+     &:active-trail {
+    	color: $link-color !important;
+    	} 
+     &:hover{
+     	background-color: #fff;
+  	 }
+  }
+  li a{
+    margin-left: auto;
+    margin-right: auto;
     }
+  }
 }
-
 a.sf-depth-1.active{
   color: $link-color !important;
 }
-
 /* FLEX SLIDER*/
 #flexslider-1{
-	border: none;
+  border: none;
 	margin: 0px;
 }
 .flex-caption{
-    a {
-    	color: #065288;
-    	text-decoration: none;
-    	background-color: rgba(204,204,204,0.8);
-    	padding: 12px 10px 10px 10px;
-    	z-index: 10;
-    	top: 40px;
-    	position: absolute;
-    	font-size: 1.333em;
-    	max-width: 350px;
-    	font-family: 'Fira Sans', sans-serif;
+  a {
+   	color: #065288;
+   	text-decoration: none;
+   	background-color: rgba(204,204,204,0.8);
+   	padding: 12px 10px 10px 10px;
+   	z-index: 10;
+   	top: 40px;
+   	position: absolute;
+   	font-size: 1.333em;
+   	max-width: 350px;
+   	font-family: 'Fira Sans', sans-serif;
 	}
 	::after {
     content:url(carrot-from-hell.png);
@@ -196,25 +177,21 @@ a.sf-depth-1.active{
   bottom: -50px;
 }
 .flex-direction-nav a{
-        height: 57px;
-      }
-    
+  height: 57px;
+}
 /*Browse by last name*/
-
 .row {
 	background: #ffff;
-    border-bottom:1px solid #e5e5e5;
+  border-bottom:1px solid #e5e5e5;
 }
-
 .inner_row{
   .row {
-     border-bottom: none !important;
+    border-bottom: none !important;
   }
 }
 h2.block-title{
 	font-size: 1.288em;
 }
-
 .region.region-sidebar-first{
   min-height: 305px;
   border-right: 1px solid #e5e5e5;
@@ -233,79 +210,71 @@ h2.block-title{
       text-decoration: none;
       border-radius: 50%;
       color: #fff;
-      }
+    }
   }
   .active {
    background-color: #005E99;
    text-decoration: none;
    border-radius: 50%;
    color: #fff; 
-    }
+  }
   div.view-content {
     padding: 20px;
-    }
+  }
   .block-title{
     padding-left: 15px;
-    }
   }
-.region.region-sidebar-third{
-    padding-left: 15px;
-    padding-bottom: 20px;
-    .block-title { 
-      padding-left:0px;
-    }
 }
-
-
+.region.region-sidebar-third {
+  padding-left: 15px;
+  padding-bottom: 20px;
+  .block-title { 
+    padding-left:0px;
+  }
+}
 /*Faculty Achievements*/
-
 .region.region-content {
 	#node-6	{
-  		padding-left: 25px;
-  		padding-right: 25px;
-  		padding-top: 19px;
-  		h2{
-        font-size: 1.2em;
-    		background-image: url(divider4.png);
-    		background-repeat: no-repeat;
-    		background-position: bottom center;
-    		margin-bottom: 10px;
-    		padding-bottom: 20px;
-    		margin-top: 0px; 
-        text-align: center; 
-        a{
-          color: #222;
-        }
+ 		padding-left: 25px;
+ 		padding-right: 25px;
+ 		padding-top: 19px;
+ 		h2 {
+      font-size: 1.2em;
+    	background-image: url(divider4.png);
+    	background-repeat: no-repeat;
+    	background-position: bottom center;
+    	margin-bottom: 10px;
+    	padding-bottom: 20px;
+    	margin-top: 0px; 
+      text-align: center; 
+      a {
+        color: #222;
+      }
+   	}
+   	a {
+   	  text-decoration: none;
+   		&:active, &:focus, &:hover { 
+   		color:$link-color;
    		}
-   		a{
-   			text-decoration: none;
-   			&:active, &:focus, &:hover{
-   				color:$link-color;
-   			}
+   	}
+   	.list-inline {
+   	  font-size: 1.8em;
+    	text-align: right;
+   		margin: 0 0.455em 0 0;
+   		padding: 0 0.6em 0 0;
+   		a {
+   		 color: $link-color !important;
+   		 &:hover, &:focus {
+   		text-decoration:underline ;
    		}
-   		.list-inline {
-   			font-size: 1.8em;
-    		text-align: right;
-   			margin: 0 0.455em 0 0;
-   			padding: 0 0.6em 0 0;
-   			a {
-   				color: $link-color !important;
-   				&:hover, &:focus {
-   					text-decoration:underline ;
-   				}
-   			}
-        li{
-          font-size: 0.5888em;
-        }				
-   	
-   		}
-
-    }
-
+   	}
+    li {
+      font-size: 0.5888em;
+    }				
+	 }
+  }
 }
-
 /*Faculty creative works*/
-
 .region.region-sidebar-second {
 	min-height: 305px;
   border-left: 1px solid #e5e5e5;
@@ -313,41 +282,35 @@ h2.block-title{
   margin-left: -36px;
   .block-title {
 		margin-bottom: 20px;
-    	margin-top: 0;
-     	font-size: 1.288em;
+   	margin-top: 0;
+  	font-size: 1.288em;
   }
-
 }
-
-
-
 /* Books */
 .region.region-sidebar-fourth {
 	border-left: 1px solid #e5e5e5;
   padding-left: 15px;
 	#books {
 		img {
-    		max-height: 200px;
-    		width: auto;
-   			border: 1px solid #3b3c3e;
-   		}
-   		.flex-direction-nav a{
-   			height: 48px;
-   		}
-
+   		max-height: 200px;
+   		width: auto;
+ 			border: 1px solid #3b3c3e;
+ 		}
+ 		.flex-direction-nav a {
+ 			height: 48px;
+ 		}
 	}
 }
-
 /*Internal Links*/
-.content_inner{
+.content_inner {
   min-height: 671px;
 	border-left: 1px solid #ccc; 
   padding: 25px;
-	.region.region-content{
+	.region.region-content {
 		padding-left: 20px;
     border-right: none ;
     border-left: none;
-    #page-title{
+    #page-title {
       font-size: 1.7em;
       margin-bottom: -20px;
     }
@@ -355,55 +318,54 @@ h2.block-title{
 			font-size: 18px;
 		}
     .pane-content {
-    ul a{
+    ul a {
     padding-bottom: 10px;
     }
-    a{
+    a {
       font-size: 1.1em !important;
     }
     li {
       padding-bottom: 10px;
       list-style-type: none;
-      }
-    }
-  }
-  .panel-pane.pane-entity-field-extra.pane-taxonomy-term-description{
-    margin-bottom: 20px;
-  }
-  #block-views-browse-lastname-block-2{
-    font-size: 1.7em;
-    padding-bottom: 30px;
-    a{
-      padding: 5px 10px 0 10px;
-      &:focus, &:hover {
-      background-color: #005E99;
-      text-decoration: none;
-      border-radius: 50%;
-      color: #fff;
-      }
-    }
-    .active{
-      background-color: #005E99;
-      text-decoration: none;
-      border-radius: 50%;
-      color: #fff;
     }
   }
 }
-
+.panel-pane.pane-entity-field-extra.pane-taxonomy-term-description{
+  margin-bottom: 20px;
+}
+#block-views-browse-lastname-block-2{
+  font-size: 1.7em;
+  padding-bottom: 30px;
+  a {
+    padding: 5px 10px 0 10px;
+    &:focus, &:hover {
+    background-color: #005E99;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #fff;
+    }
+  }
+ .active {
+    background-color: #005E99;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #fff;
+    }
+  }
+}
 .side_inner {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  .block-views-browse-lastname-block-1{
-      padding: 20px;
-      padding-left: 30px;
-      a{
-        font-size: 1.1em;
+  .block-views-browse-lastname-block-1 {
+    padding: 20px;
+    padding-left: 30px;
+    a {
+      font-size: 1.1em;
       }
-      h2{
-        margin-top: 0px;
+    h2 {
+      margin-top: 0px;
       }
-    }
+  }
   .region.region-sidebar-first{
     border-bottom: 1px solid #ccc;
     margin-right: 0px;
@@ -412,159 +374,140 @@ h2.block-title{
     padding: 20px;
     .block-title {
       padding-left: 0px;
-      }
+    }
     .view-content{
       padding: 0px;
       margin-top: 20px;
     }  
   }
-  .region.region-sidebar-third{
+ .region.region-sidebar-third {
     padding: 20px;
   }
 }
-
 .hangingIndent > p {
-    text-indent: -28px;
-    padding-left: 28px;
-    margin-bottom: 2em;
+  text-indent: -28px;
+  padding-left: 28px;
+  margin-bottom: 2em;
 }
-
-// footer
-
+/*Footer*/
 .footer {
-	    border: none;
-	    padding: 20px 15px 0 15px;
-	    background: $brand-info;
-	    margin-top: 0px;
+  border: none;
+  padding: 20px 15px 0 15px;
+  background: $brand-info;
+  margin-top: 0px;
 	}
-	.region-footer {
-			
-	p {
-	    float: right;
-	    margin-bottom: 0px;
-	    font-size: 0.955em;
-	    padding: 0 0 10px 0;
+.region-footer {
+  p {
+	  float: right;
+	  margin-bottom: 0px;
+	  font-size: 0.955em;
+	  padding: 0 0 10px 0;
 	}
-
-	a{
-		color: $link-color;
+	a { 
+	 color: $link-color;
 	}
 }
-
-
 @media (max-width: 991px) {
 #navbar {
-	background-image: none;
+  background-image: none;
 }
 .name {
 	background-color: none;
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.5888em;
-    right: 50px;
-    top: 50px;
-    bottom: 0;
+  right: 50px;
+  top: 50px;
+  bottom: 0;
 	z-index: 10;
-    position: absolute;
-    &:hover, &:focus {
+  position: absolute;
+  &:hover, &:focus {
 		color:#fff;
 		text-decoration: none;
 	}
 }
-
 /* Superfish MENU */
-
 #menu-bar-wrapper {
-    margin-left: -15px;
-    margin-right: -15px;
-    
-   
-  .sf-menu{
-     background: $brand-info;
-     line-height: 3.0;
-         z-index: 497;
-         li {
-          display:inline-block !important;
-          float:none;
-          margin-right:11px;
-          margin-left:18px;
-          width: 21%;
-          border-top: none;
-          border-right: 1px solid #3b3c3e;
-          border-left: 1px solid #3b3c3e;
-          top: -9px;
-          a{
-            font-size: 0.8em;
-           }
-          }
-    .sf-style-hotel {
-      ul {  
-        background: #ccc;
-            float:none;
-        }
-      a {
-          color: #222 !important;
-          text-align: center;
-          padding:20px;
-          font-size: 1.2em;
-          &:active{
-            color: $link-color !important;
-            }
-          .sf-depth-1 {
-            color: #222;
-            
-          } 
-          .active-trail.sf-depth-1 {
-            color: $link-color;
-          } 
+  margin-left: -15px;
+  margin-right: -15px;
+ .sf-menu {
+    background: $brand-info;
+    line-height: 3.0;
+    z-index: 497;
+    li {
+      display:inline-block !important;
+      float:none;
+      margin-right:11px;
+      margin-left:18px;
+      width: 21%;
+      border-top: none;
+      border-right: 1px solid #3b3c3e;
+      border-left: 1px solid #3b3c3e;
+      top: -9px;
+      a{
+        font-size: 0.8em;
         }
       }
-  
+    .sf-style-hotel {
+     ul {  
+      background: #ccc;
+      float:none;
+      }
+    a {
+      color: #222 !important;
+      text-align: center;
+      padding:20px;
+      font-size: 1.2em;
+      &:active {
+      color: $link-color !important;
+      }
+    .sf-depth-1 {
+      color: #222;
+     } 
+    .active-trail.sf-depth-1 {
+      color: $link-color;
+        } 
+      }
+    }
   }
   .region.region-header {
-      min-width: 200px;
-      display: block ;
-      width: 100%;
-      max-width: 1200px;
-      }
-
+   min-width: 200px;
+   display: block ;
+   width: 100%;
+   max-width: 1200px;
+  }
 }
 a.sf-depth-1.active{
   color: $link-color !important;
 }
-
 #block-superfish-1 {
-    background-color: $brand-info;
-    #superfish-1 {
-      float:none;
-      text-align: center;
+  background-color: $brand-info;
+  #superfish-1 {
+  float:none;
+  text-align: center;
+  color: #222;
+  height: 50px;
+  a {
+    &:focus , &:visited , &:link {
+      text-decoration: none !important;
       color: #222;
-      height: 50px;
-      a{
-      
-      &:focus , &:visited , &:link {
-       text-decoration: none !important;
-       color: #222;
-
-       }  
-       &:active-trail{
-          color: $link-color !important;
-        } 
-       &:hover{
-        background-color: #fff;
-       
-
-       }
-       
+      }  
+    &:active-trail {
+      color: $link-color !important;
+      } 
+    &:hover {
+      background-color: #fff;
       }
     }
+  }
 }
-
 #node-6 h2 {
-	font-weight: bold;
+  font-weight: bold;
 }
 .region.region-sidebar-first{
   min-height: 0px;
+  border-right: none;
+  margin-right: 0px;
 }
 .region.region-sidebar-second{
   border-left: none;
@@ -573,197 +516,173 @@ a.sf-depth-1.active{
 .region.region-content{
   border-left: none;
   border-right: none; 
- #node-6 {
+  #node-6 {
     min-height: auto;
-    }
+  }
 }
 .region.region-sidebar-fourth {
 	min-height: 331px;
   border-left: none;
-  }
+}
  .content_inner{
   min-height: 0px;
-   .page-header {
-      padding-top: 0px;   
+  .page-header {
+    padding-top: 0px;   
     }
   }
 }	
-
 @media (max-width: 767px) {
-
 header{
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
-
 .name {
-    right: 53px;
-    top: 27px;
-  	}
+  right: 53px;
+  top: 27px;
+}
 #node-6 h2{
 	font-weight: bold;
-	}
+}
 .sf-accordion-toggle{
-   	a { 
-   		display: block;
-    	background: url(icon-navigation.gif) 50% 50% no-repeat #3b3c3e;
-   		position: absolute;
-    	top: 14px;
-    	right: 0px;
-    	z-index: 100;
-      .glyphicon-menu-hamburger {
-        color: #fff;
-        padding: 15px;
-      }
-
-		}
-	}	
- /* Superfish MENU */
-
+	a { 
+		display: block;
+   	background: url(icon-navigation.gif) 50% 50% no-repeat #3b3c3e;
+ 		position: absolute;
+   	top: 14px;
+   	right: 0px;
+   	z-index: 100;
+    .glyphicon-menu-hamburger {
+      color: #fff;
+      padding: 15px;
+    }
+	}
+}	
+/* Superfish MENU */
 #menu-bar-wrapper {
-    margin-left: -15px;
-    margin-right: -15px;
-    width: 198px;
-    height: 37px;
-    float: right;
-    .sf-menu{
-     background: $brand-info;
-     line-height: 3.0;
-     z-index: 497;
-     margin-top: -43px;
-     height: 142px;
-
-        li {
-          display: block !important;
-          float: none;
-          width: 21%;
-          border-right: none;
-          border-left: none;
-          border-top: 1px solid #3b3c3e;
-          width: 198px;
-          margin-left: 0px;
-          padding-left: 15px;
-          background-color: #ccc;
-          &:first-child{
-             border-top: none;
-            }
-         &:hover{
-              text-decoration: none;
-              background-color: #fff;
-            }
-          a{
-            height: 37px;
-            color: #222 ;
-            top: -6px;
-            &:active-trail{
-              color: $link-color;
-            }
-            &:hover{
-              text-decoration: none;
-            
-            }
-          } 
-        }
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 198px;
+  height: 37px;
+  float: right;
+  .sf-menu {
+    background: $brand-info;
+    line-height: 3.0;
+    z-index: 497;
+    margin-top: -43px;
+    height: 142px;
+    li {
+      display: block !important;
+      float: none;
+      width: 21%;
+      border-right: none;
+      border-left: none;
+      border-top: 1px solid #3b3c3e;
+      width: 198px;
+      margin-left: 0px;
+      padding-left: 15px;
+      background-color: #ccc;
+      &:first-child {
+        border-top: none;
+       }
+      &:hover {
+        text-decoration: none;
+        background-color: #fff;
+       }
+      a {
+        height: 37px;
+        color: #222 ;
+        top: -6px;
+        &:hover {
+          text-decoration: none;            
+         }
+        } 
+      }
     .sf-style-hotel {
       ul {  
         background: #ccc;
-            float:none;
-        }
+        float:none;
+      }
       a {
-          color: #222 !important;
-          text-align: center;
-          padding:20px;
-          font-size: 1.2em;
-          &:active{
-            color: $link-color !important;
-            }
-          .sf-depth-1 {
-            color: #222;
-            
-          } 
-          .active-trail .sf-depth-1 {
-            color: $link-color;
-          } 
-
-        }
-      }
-  
-  }
-  .region.region-header {
-      min-width: 200px;
-      display: block ;
-      width: 100%;
-      max-width: 1200px;
-      }
-
-}
-
-
-
-#block-superfish-1 {
-      #superfish-1 {
-      float:none;
-      text-align: center;
-      color: #222;
-      a{
-      
-      &:focus , &:visited , &:link {
-       text-decoration: none !important;
-       color: #222;
-
-       }  
-       &:active-trail{
+        color: #222 !important;
+        text-align: center;
+        padding:20px;
+        font-size: 1.2em;
+        &:active {
           color: $link-color !important;
+        }
+        .sf-depth-1 {
+          color: #222;
         } 
-       &:hover{
-        background-color: #fff;
-       
-
-       }
-       
+        .active-trail .sf-depth-1 {
+          color: $link-color;
+        } 
       }
     }
+  }
+  a.sf-depth-1.active {
+    color: $link-color!important;
+  }
+  .region.region-header {
+    min-width: 200px;
+    display: block ;
+    width: 100%;
+    max-width: 1200px;
+  }
+} 
+#block-superfish-1 {
+  width: 0px;
+  height: 0px;
+  #superfish-1 {
+    float:none;
+    text-align: center;
+    color: #222;
+    a {
+      &:focus , &:visited , &:link {
+      text-decoration: none !important;
+      color: #222;
+      }  
+      &:active-trail {
+        color: $link-color !important;
+      } 
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
 }
- 
-
 .content_inner{
   min-height: 0px;
   padding-top: 0px;
  }
 .img-scale {
-    overflow: hidden;
-    height: auto;
-    max-height: 125px;
-  } 
+  overflow: hidden;
+  height: auto;
+  max-height: 125px;
+ } 
 }
-
 @media (max-width: 720px) {
 #menu-bar-wrapper .sf-menu {
-    margin-top: -11px;
-   }
+  margin-top: -11px;
+  }
 }
-
-
-
 @media (max-width: 480px) {
 #logo {
-    float: left;
-    padding-top: 40px;
-    margin-left: 105px;
-    margin-top: 0px;
-}
-.name {
-    right: 30px;
-    top: 10px;
-    
+  float: left;
+  padding-top: 40px;
+  margin-left: 105px;
+  margin-top: 0px;
   }
-  .sf-accordion-toggle a {
-    top: 45px;
-    }
+.name {
+  right: 30px;
+  top: 10px;
+  }
+.sf-accordion-toggle a {
+  top: 45px;
+  }
 .flex-direction-nav a {
   top: 30%;
   } 
 #menu-bar-wrapper .sf-menu {
-    margin-top: -20px;
-   }     
+  margin-top: -20px;
+  }     
 }

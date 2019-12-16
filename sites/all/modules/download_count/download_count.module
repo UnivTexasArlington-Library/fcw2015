@@ -188,7 +188,7 @@ function download_count_file_download_access_alter(&$grants, $file, $entity_type
     'fid' => $file['fid'],
     'uid' => $user->uid,
     'type' => $entity_type,
-    'id' => $entity->$entity_info['entity keys']['id'],
+    'id' => $entity->{$entity_info['entity keys']['id']},
     'ip_address' => $ip,
     'referrer' => $referrer,
     'timestamp' => $time,

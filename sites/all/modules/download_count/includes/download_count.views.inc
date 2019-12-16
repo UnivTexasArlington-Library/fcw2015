@@ -107,6 +107,40 @@ function download_count_views_data() {
     ),
   );
 
+  $fields_info = field_info_fields();
+  $file_field_entity_types = array();
+  foreach($fields_info as $field_info) {
+    if($field_info['type'] == 'file') {
+      $file_field_entity_types += array_keys($field_info['bundles']);
+    }
+  }
+
+  $file_field_entity_types = array_unique($file_field_entity_types);
+
+  foreach($file_field_entity_types as $entity_type) {
+    $entity_info = entity_get_info($entity_type);
+    if($entity_info['fieldable']) {
+      if (isset($entity_info['base table'])) {
+        $entity = $entity_info['label'];
+        if ($entity == t('Node')) {
+          $entity = t('Content');
+        }
+        $field_name = $entity_info['base table'] . '_' . $entity_info['entity keys']['id'];
+
+        $parameters = array('@entity' => $entity);
+        $data['download_count'][$field_name]['relationship'] = array(
+          'handler' => 'views_handler_relationship',
+          'real field' => 'id',
+          'base' => $entity_info['base table'],
+          'base field' => $entity_info['entity keys']['id'],
+          'label' => t('@entity from which the file was downloaded', $parameters),
+          'title' => $entity,
+          'help' => t('A bridge to the @entity entity from which the file was downloaded', $parameters),
+        );
+      }
+    }
+  }
+
   // referrer
   $data['download_count']['referrer'] = array(
     'title' => t('Referrer'),

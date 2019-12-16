@@ -28,7 +28,7 @@ function download_count_field_formatter_view($entity_type, $entity, $field, $ins
 
   foreach ($items as $delta => $item) {
     if ($access) {
-      $item['downloads'] = db_query("SELECT COUNT(fid) from {download_count} where fid = :fid AND type = :type AND id = :id", array(':fid' => $item['fid'], ':type' => $entity_type, ':id' => $entity->$entity_info['entity keys']['id']))->fetchField();
+      $item['downloads'] = db_query("SELECT COUNT(fid) from {download_count} where fid = :fid AND type = :type AND id = :id", array(':fid' => $item['fid'], ':type' => $entity_type, ':id' => $entity->{$entity_info['entity keys']['id']}))->fetchField();
     }
     $element[$delta] = array(
       '#theme' => !$access ? 'file_link' : 'download_count_file_field_formatter',

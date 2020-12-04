@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Definition of views_bootstrap_plugin_rows.
@@ -8,6 +9,7 @@
  * Class to define a row plugin handler.
  */
 class ViewsBootstrapThumbnailPluginRows extends views_plugin_row {
+
   /**
    * Definition.
    */
@@ -16,14 +18,13 @@ class ViewsBootstrapThumbnailPluginRows extends views_plugin_row {
     $options['image'] = array('default' => '');
     $options['title'] = array('default' => '');
     $options['content'] = array('default' => array());
-    $options['link'] = array('default' => '');
     return $options;
   }
 
   /**
    * Form.
    */
-  function options_form(&$form, &$form_state) {
+  public function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
 
     // Pre-build all of our option lists for the dials and switches that follow.
@@ -58,13 +59,6 @@ class ViewsBootstrapThumbnailPluginRows extends views_plugin_row {
       '#options' => $fields,
       '#default_value' => $this->options['content'],
     );
-
-    $form['link'] = array(
-      '#type' => 'select',
-      '#required' => TRUE,
-      '#title' => t('Link'),
-      '#options' => array('' => t('<None>')) + $fields,
-      '#default_value' => $this->options['link'],
-    );
   }
+
 }
